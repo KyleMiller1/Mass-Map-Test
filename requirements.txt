@@ -1,0 +1,9 @@
+streamlit
+matplotlib
+numpy
+astropy
+scipy
+plotly
+photutils
+healsparse
+healpy
