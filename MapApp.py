@@ -14,10 +14,10 @@ import streamlit as st
 
 st.title('Interactive Adaptive Mass Maps')
 
-path = r"/mnt/c/Users/kylem/Downloads/convergence_CMB_mnv0.00000_om0.30000_As2.1000.tar"
-file = tar.open(path, 'r')
-map1 = file.extract('Maps11000/WLconv_z1100.00_3158r.fits')
-with fits.open('Maps11000/WLconv_z1100.00_3158r.fits') as hdul:
+# path = r"/mnt/c/Users/kylem/Downloads/convergence_CMB_mnv0.00000_om0.30000_As2.1000.tar"
+# file = tar.open(path, 'r')
+# map1 = file.extract('Maps11000/WLconv_z1100.00_3158r.fits')
+with fits.open('WLconv_z1100.00_3158r.fits') as hdul:
     data = hdul[0].data  # Assuming image is in primary HDU
     header = hdul[0].header
 
