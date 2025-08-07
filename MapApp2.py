@@ -38,7 +38,7 @@ class MultiResMap:
             z=self.base_map,
             colorscale='Viridis',
             showscale=False,
-            zmin=0, zmax= np.nanpercentile(data, 99)
+            zmin=0, zmax= data.max()*0.95
         ))
         i=0
         colors = ['reds_r','greens_r', 'blues_r']
@@ -62,7 +62,7 @@ class MultiResMap:
                 y=y_high,
                 colorscale= color,
                 showscale=False,
-                zmin=0, zmax= np.nanpercentile(highres_tile.data, 99),
+                zmin=0, zmax= highres_tile.data.max()*0.95,
                 opacity=1.0
             ))
             i+=1
