@@ -48,11 +48,11 @@ class MultiResMap:
             x_high = np.linspace(0, self.base_map.shape[0]-1, int(3.5/highres_tile.res))
             y_high = np.linspace(0, self.base_map.shape[1]-1, int(3.5/highres_tile.res))
 
-            if colorscheme == "Distinguish Different Resolutions":
+            if colorscheme == "Distinguish Between Different Resolutions":
                 color = colors[i]
             elif colorscheme == "Uniform Colormap":
                 color = 'Viridis'
-            elif colorscheme == "Distinguish 'Clusters' vs Background":
+            elif colorscheme == "Distinguish Between 'Clusters' and Background":
                 color = 'Plasma'
             
             # High-res overlay
