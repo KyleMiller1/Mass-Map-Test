@@ -14,7 +14,7 @@ import streamlit as st
 
 st.title('Interactive Adaptive Mass Map')
 
-with fits.open('Om0.230_Ode0.770_w-1.000_wa0.000_si0.800/512b260/kappa/WLconv_z2.00_0803r.fits') as hdul:
+with fits.open('WLconv_z2.00_0803r.fits') as hdul:
     data = hdul[0].data  # Assuming image is in primary HDU
     header = hdul[0].header
 
